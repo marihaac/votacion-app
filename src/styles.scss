@@ -1,10 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
-$color-azul-utn: #0D2D6D;
-$color-azul-profundo: #052C65;
-$color-blanco: #FBFBFD;
-
 body {
-  background-color: $color-blanco;
-  color: $color-azul-utn;
+  background-color: rgb(5, 44, 101); // Azul profundo
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 80px auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 150px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #052c65;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f57c00; // Naranja
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65100;
+}
+
+.mensaje {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+  height: auto;
 }

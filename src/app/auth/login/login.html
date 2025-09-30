@@ -1,11 +1,17 @@
-<form (ngSubmit)="iniciarSesion()" #form="ngForm">
-  <label for="identificacion">Identificación:</label>
-  <input [(ngModel)]="identificacion" name="identificacion" required />
+<img src="" alt="Logo UTN" />
 
-  <label for="contrasenna">Contraseña:</label>
-  <input [(ngModel)]="contrasenna" name="contrasenna" type="password" required />
+<form (ngSubmit)="iniciarSesion()" #form="ngForm" class="login-form">
+  <div class="form-row">
+    <label for="identificacion">Identificación:</label>
+    <input [(ngModel)]="identificacion" name="identificacion" id="identificacion" required />
+  </div>
+
+  <div class="form-row">
+    <label for="contrasenna">Contraseña:</label>
+    <input [(ngModel)]="contrasenna" name="contrasenna" id="contrasenna" type="password" required />
+  </div>
 
   <button type="submit" [disabled]="!form.valid">Iniciar sesión</button>
-</form>
 
-<p>{{ mensaje }}</p>
+  <p class="mensaje">{{ mensaje }}</p>
+</form>
