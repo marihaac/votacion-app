@@ -10,7 +10,7 @@ export class PersonasService {
   constructor(private http: HttpClient) {}
 
   login(identificacion: string, contrasenna: string) {
-    return this.http.post(`${this.apiUrl}/ValidarSesion`, {
+    return this.http.post(`${this.apiUrl}/personas/ValidarSesion`, {
       Identificacion: identificacion,
       Contrasenna: contrasenna,
     });
