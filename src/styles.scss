@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+$color-azul-utn: #0D2D6D;
+$color-azul-profundo: #052C65;
+$color-blanco: #FBFBFD;
+
+body {
+  background-color: $color-blanco;
+  color: $color-azul-utn;
+  font-family: 'Segoe UI', sans-serif;
+}

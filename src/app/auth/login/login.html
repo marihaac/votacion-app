@@ -1,0 +1,10 @@
+<h2>Inicio de Sesión</h2>
+<form (ngSubmit)="iniciarSesion()">
+  <label>Cédula:</label>
+  <input [(ngModel)]="identificacion" name="identificacion" required>
+
+  <label>Contraseña:</label>
+  <input [(ngModel)]="contrasenna" name="contrasenna" type="password" required>
+
+  <button type="submit">Ingresar</button>
+</form>
