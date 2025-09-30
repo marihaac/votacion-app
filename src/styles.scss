@@ -1,49 +1,88 @@
 body {
-  background-color: rgb(5, 44, 101); // Azul profundo
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(5, 44, 101);
+  font-family: 'Segoe UI', sans-serif;
   color: #ffffff;
 }
 
-.login-form {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 500px;
-  margin: 80px auto;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.form-row {
+.login-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-section img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+}
+
+.logo-section h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.input-group {
   display: flex;
   align-items: center;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
-label {
-  width: 150px;
-  font-weight: bold;
-  color: #ffffff;
+.input-group i {
+  margin-right: 10px;
+  color: #052c65;
 }
 
-input {
-  flex: 1;
-  padding: 10px;
+.input-group input {
   border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #052c65;
+  outline: none;
+  flex: 1;
   font-size: 16px;
+  color: #052c65;
+}
+
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.options-row a {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background-color: #f57c00; // Naranja
+  background-color: #f57c00;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
@@ -56,14 +95,7 @@ button:hover {
 
 .mensaje {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 14px;
   color: #ffffff;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 180px;
-  height: auto;
 }
