@@ -32,6 +32,11 @@
         <a href="#">¿Olvidaste tu contraseña?</a>
       </div>
 
+      <div class="registro-link">
+        ¿No tienes cuenta?
+        <a routerLink="/Registro">Regístrate aquí</a>
+      </div>
+
       <button type="submit" [disabled]="!form.valid">Entrar</button>
       <p class="mensaje">{{ mensaje }}</p>
     </form>

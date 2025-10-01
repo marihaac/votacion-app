@@ -110,3 +110,25 @@ button:hover {
   height: auto;
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
 }
+
+button {
+  background-color: #f57c00; // naranja UTN
+}
+
+button:hover {
+  background-color: #e65100;
+}
+
+.registro-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.registro-link a {
+  color: #f57c00;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
