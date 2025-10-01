@@ -34,7 +34,7 @@
 
       <div class="registro-link">
         ¿No tienes cuenta?
-        <a routerLink="/Registro">Regístrate aquí</a>
+        <button (click)="irARegistro()">Ir al registro</button>
       </div>
 
       <button type="submit" [disabled]="!form.valid">Entrar</button>
