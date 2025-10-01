@@ -32,11 +32,6 @@
         <a href="#">¿Olvidaste tu contraseña?</a>
       </div>
 
-      <div class="registro-link">
-        ¿No tienes cuenta?
-        <button (click)="irARegistro()">Ir al registro</button>
-      </div>
-
       <button type="submit" [disabled]="!form.valid">Entrar</button>
       <p class="mensaje">{{ mensaje }}</p>
     </form>
