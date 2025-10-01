@@ -19,6 +19,7 @@ export class LoginComponent {
   iniciarSesion() {
     this.personasService.login(this.identificacion, this.contrasenna).subscribe(
       (res: any) => {
+        console.log(res)
         this.mensaje = res.mensaje || res.error || 'Inicio de sesión exitoso';
         console.log(res);
       },
